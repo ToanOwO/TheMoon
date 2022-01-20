@@ -36,6 +36,7 @@ section img#moon
 {
     top: 0px;
     mix-blend-mode: screen;
+    animation: quay 50s linear infinite;
 }
 section img#stars
 {
@@ -74,4 +75,15 @@ section img#mountains_front
 
 audio{
     overflow: hidden;
+}
+@keyframes quay
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg)
+    }
 }
