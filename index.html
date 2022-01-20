@@ -5,18 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chill</title>
     <link rel="stylesheet" href="style.css">
-    <link rel='icon' href="2ac496220811adaac057fc49d23ba79f--yin-yang-logo-logo-hands.jpg"> 
+    <link rel='icon' href="pngtree-moon-logo-icon-minimal-design-concept-creative-style-vector-png-image_910307.jpg"> 
 </head>
 <body>
     <section>
         <img src="stars.png" id="stars">
         <img src="moon.png" id="moon">
         <img src="mountains_behind.png" id="mountains_behind">
+        
         <img src="mountains_front.png" id="mountains_front">
         <audio controls loop autoplay>
             <source id="btn" src="nhac.mp3" type="audio/mpeg">
         </audio>
 
     </section>
+    <script src="anime.min.js"></script>
+    <script>
+        var animation = anime.timeline({
+            autoplay: true
+        })
+        animation
+        .add({
+            targets: '#btn',
+            top: '1500px',
+            duration: 500,
+            easing: 'easeInOutSine'
+
+        })
+        .add({
+            targets: '#stars',
+            top: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine'
+
+        })
+        .add({
+            targets: '#mountains_behind',
+            bottom: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine'
+
+        })
+        .add({
+            targets: '#moon',
+            top: '0px',
+            duration: 1000,
+            easing: 'easeInOutBack'
+
+        })
+        .add({
+            targets: '#mountains_front',
+            bottom: '0px',
+            duration: 1000  ,
+            easing: 'easeInOutSine'
+            
+        })
+        .add({
+            targets: '#btn',
+            top: '50%',
+            duration: 1000,
+            
+
+        })
+
+        
+
+    </script>
 </body>
 <html>
